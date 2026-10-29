@@ -1,0 +1,418 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Siyabonga Bhubesi Group</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: full-bleed lion hero with copy on the dark left, then alternating black bands separated by fine gold rules; service cards in a 3-up grid. */
+:root{
+  --bg:#070605;
+  --bg-2:#0d0b08;
+  --panel:#14110b;
+  --line:rgba(212,169,53,.24);
+  --gold:#d4a935;
+  --gold-hi:#f4d982;
+  --gold-lo:#9a741c;
+  --text:#efe7d3;
+  --muted:#a69d88;
+  --display:"Cormorant Garamond","Times New Roman",serif;
+  --body:"Jost","Helvetica Neue",Arial,sans-serif;
+  --gold-grad:linear-gradient(180deg,#f9e59a 0%,#d9ad3a 48%,#a67c1f 52%,#f0cd68 100%);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;font-weight:300;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit}
+img{display:block}
+.wrap{max-width:1180px;margin-inline:auto}
+.bleed{margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;margin:0;text-wrap:balance}
+.gold-text{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:38px;height:1px;background:var(--gold)}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(7,6,5,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 28%;transform:scale(1);border:1px solid var(--line)}
+.brand span{font-family:var(--display);font-size:1.3rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.brand small{display:block;font-family:var(--body);font-size:.6rem;letter-spacing:.38em;color:var(--gold);font-weight:400;margin-top:-4px}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+nav a:hover{color:var(--gold-hi)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;cursor:pointer;font:500 .82rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase;padding:16px 30px;border:1px solid var(--gold);color:var(--gold-hi);background:transparent;transition:background .25s,color .25s,transform .25s}
+.btn:hover{background:rgba(212,169,53,.12)}
+.btn.solid{background:var(--gold-grad);color:#150f02;border-color:transparent;font-weight:600}
+.btn.solid:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold-hi);width:46px;height:42px;cursor:pointer}
+.menu-btn svg{width:22px;height:22px}
+
+/* hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;background:#000 url("banner.jpg") right center/auto 100% no-repeat;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#070605 0%,#070605 38%,rgba(7,6,5,.78) 52%,rgba(7,6,5,.15) 78%,rgba(7,6,5,0) 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(0deg,var(--bg),transparent)}
+.hero .wrap{position:relative;z-index:2;padding-block:90px}
+.hero-copy{max-width:600px;display:grid;gap:26px}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5rem);font-weight:700}
+.hero p{margin:0;max-width:50ch;font-size:1.12rem;color:#ddd3bb}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.tagline{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.tagline i{font-style:normal;color:var(--gold-lo)}
+
+/* fact strip */
+.facts{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:30px 22px;border-left:1px solid var(--line);min-width:0}
+.fact:first-child{border-left:0;padding-left:0}
+.fact b{display:block;font-family:var(--display);font-size:1.5rem;font-weight:600;color:var(--gold-hi);line-height:1.15}
+.fact span{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+section{padding-block:104px}
+.sec-head{display:grid;gap:18px;max-width:720px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(2.2rem,4.6vw,3.5rem)}
+.sec-head p{margin:0;color:var(--muted)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:center}
+.about-logo{border:1px solid var(--line);padding:14px;background:#000;position:relative}
+.about-logo::after{content:"";position:absolute;inset:6px;border:1px solid rgba(212,169,53,.12);pointer-events:none}
+.about-logo img{width:100%;height:auto}
+.about-copy{display:grid;gap:22px;min-width:0}
+.about-copy h2{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+.about-copy p{margin:0;color:#cfc6b0}
+.sig{border-top:1px solid var(--line);padding-top:20px;display:grid;gap:2px}
+.sig b{font-family:var(--display);font-size:1.5rem;color:var(--gold-hi);font-weight:600}
+.sig span{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+
+/* services */
+.band{background:var(--bg-2);border-block:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.card{background:var(--panel);border:1px solid var(--line);padding:36px 30px 34px;display:grid;gap:14px;align-content:start;min-width:0;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.card h3{font-size:1.65rem}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.ico{width:54px;height:54px;border:1px solid var(--gold-lo);display:grid;place-items:center;color:var(--gold-hi);margin-bottom:6px}
+.ico svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.tag{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+
+/* scooter programme */
+.scooter{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:start}
+.scooter h2{font-size:clamp(2.2rem,4.4vw,3.4rem);margin-block:18px 22px}
+.scooter p{color:#cfc6b0;margin:0 0 18px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px minmax(0,1fr);gap:22px;padding:30px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s);font-family:var(--display);font-size:3rem;line-height:1;font-weight:600;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.steps h3{font-size:1.6rem;margin-bottom:6px}
+.steps p{margin:0;font-size:.98rem;color:var(--muted)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+.info{display:grid;gap:30px;min-width:0}
+.info h2{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+.row{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start}
+.row .ico{width:44px;height:44px;margin:0}
+.row .ico svg{width:20px;height:20px}
+.row small{display:block;font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.row div{min-width:0;overflow-wrap:anywhere}
+.copy-btn{margin-top:6px;background:none;border:1px solid var(--line);color:var(--gold-hi);font:500 .7rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase;padding:9px 14px;cursor:pointer}
+.copy-btn:hover{border-color:var(--gold)}
+.socials{display:flex;flex-wrap:wrap;gap:12px}
+.socials a{width:48px;height:48px;border:1px solid var(--gold-lo);display:grid;place-items:center;color:var(--gold-hi);transition:background .25s,color .25s,border-color .25s}
+.socials a:hover{background:var(--gold-grad);color:#150f02;border-color:transparent}
+.socials svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+form{background:var(--panel);border:1px solid var(--line);padding:42px 38px;display:grid;gap:22px;min-width:0}
+form h3{font-size:1.9rem}
+.f2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.field{display:grid;gap:8px;min-width:0}
+label{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+input,select,textarea{width:100%;font:300 1rem/1.5 var(--body);color:var(--text);background:#0a0805;border:1px solid rgba(212,169,53,.28);padding:14px 16px;border-radius:0;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold-hi);box-shadow:0 0 0 3px rgba(212,169,53,.15)}
+textarea{min-height:140px;resize:vertical}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--gold) 50%),linear-gradient(135deg,var(--gold) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.err{color:#f0a28a;font-size:.82rem;min-height:0}
+.note{font-size:.84rem;color:var(--muted);margin:0}
+.result{border:1px solid var(--gold);background:rgba(212,169,53,.07);padding:24px;display:grid;gap:14px}
+.result h4{margin:0;font:600 1.5rem/1.2 var(--display);color:var(--gold-hi)}
+.result pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:300 .92rem/1.6 var(--body);color:var(--text);background:#0a0805;border:1px solid var(--line);padding:16px;max-height:260px;overflow:auto}
+.result .cta-row{margin:0}
+.result .btn{padding:14px 22px}
+
+footer{border-top:1px solid var(--line);background:#050403}
+.foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding-block:36px}
+.foot p{margin:0;font-size:.84rem;color:var(--muted)}
+.foot b{font-family:var(--display);font-size:1.25rem;color:var(--gold-hi);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+
+@media (max-width:980px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .about,.scooter,.contact{grid-template-columns:minmax(0,1fr);gap:48px}
+  .facts .wrap{grid-template-columns:repeat(2,1fr)}
+  .fact:nth-child(3){border-left:0;padding-left:0}
+  .fact{border-top:1px solid var(--line)}
+  .fact:nth-child(-n+2){border-top:0}
+  .hero{background-position:72% center}
+  .hero::before{background:linear-gradient(90deg,#070605 0%,rgba(7,6,5,.88) 45%,rgba(7,6,5,.35) 100%)}
+}
+@media (max-width:860px){
+  .menu-btn{display:grid;place-items:center}
+  nav{position:absolute;left:0;right:0;top:100%;background:rgba(7,6,5,.98);border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:8px max(16px,env(safe-area-inset-left,0px))}
+  nav li a{display:block;padding:16px 0;border-bottom:1px solid var(--line)}
+  nav li:last-child a{border-bottom:0}
+  .nav-cta{display:none}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  section{padding-block:72px}
+  .grid,.f2{grid-template-columns:minmax(0,1fr)}
+  .hero{min-height:560px;background-size:auto 100%;background-position:78% center}
+  .hero::before{background:linear-gradient(180deg,rgba(7,6,5,.55) 0%,rgba(7,6,5,.92) 70%,#070605 100%)}
+  .hero .wrap{padding-block:64px}
+  form{padding:28px 20px}
+  .foot{grid-template-columns:minmax(0,1fr)}
+  .steps li{grid-template-columns:48px minmax(0,1fr);gap:14px}
+  .brand span{font-size:1.05rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header>
+  <div class="bleed"><div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Siyabonga Bhubesi Group home">
+      <img src="logo.jpg" alt="" width="46" height="46">
+      <span>Siyabonga Bhubesi<small>GROUP (PTY) LTD</small></span>
+    </a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#scooters">Scooter Training</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn solid nav-cta" href="#enquire" style="padding:14px 22px">Enquire</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div></div>
+</header>
+
+<main id="top">
+  <div class="bleed hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">Kwa-Thema, Johannesburg</div>
+        <h1><span class="gold-text">Strength</span> that serves the community.</h1>
+        <p>Security services, and a scooter training programme that gives young South Africans a skill, a ride and a way to earn.</p>
+        <div class="cta-row">
+          <a class="btn solid" href="#enquire">Make an enquiry</a>
+          <a class="btn" href="#services">Our services</a>
+        </div>
+        <div class="tagline"><span>Protection</span><i>◆</i><span>Mobility</span><i>◆</i><span>Opportunity</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bleed facts"><div class="wrap">
+    <div class="fact"><b>Est. 2026</b><span>Founded</span></div>
+    <div class="fact"><b>Kwa-Thema</b><span>Current operations</span></div>
+    <div class="fact"><b>Security</b><span>First service line</span></div>
+    <div class="fact"><b>Scooters</b><span>Train, then rent</span></div>
+  </div></div>
+
+  <section id="about" class="bleed"><div class="wrap about">
+    <div class="about-logo"><img src="logo.jpg" alt="Siyabonga Bhubesi Group logo: a gold lion's head inside the letters S and B" width="1254" height="1254"></div>
+    <div class="about-copy">
+      <div class="eyebrow">About us</div>
+      <h2>A new company with a <span class="gold-text">lion's resolve</span>.</h2>
+      <p>Siyabonga Bhubesi Group (Pty) Ltd is a recently established company based in Kwa-Thema, Johannesburg. We started with two things our community needs: dependable security services, and practical skills for young people.</p>
+      <p>Our scooter training business teaches young South Africans to ride safely and with confidence. Riders who complete the training can then rent scooters from us, which puts mobility and work within reach.</p>
+      <p>Bhubesi is the Zulu word for lion. It stands for the courage, pride and protection we bring to every service.</p>
+      <div class="sig"><b>Mr Siyabonga Bhubesi</b><span>Founder</span></div>
+    </div>
+  </div></section>
+
+  <section id="services" class="bleed band"><div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What we do</div>
+      <h2>Services built around <span class="gold-text">safety and opportunity</span>.</h2>
+      <p>Two services are already running. The rest of our offering is open for enquiries.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <span class="tag">Operating now</span>
+        <h3>Security Services</h3>
+        <p>Trained, professional security personnel to protect homes, businesses, events and premises.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M8 17h8M19 14V5h-3M5 14h4l2-4"/></svg></div>
+        <span class="tag">Operating now</span>
+        <h3>Scooter Training &amp; Rental</h3>
+        <p>Riding skills for young South Africans, with scooters available to rent once training is complete.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3.5"/><path d="M3 21v-2a5 5 0 0 1 5-5h2"/><path d="M18 12l4 1.5v3c0 2.5-1.7 4-4 4.5-2.3-.5-4-2-4-4.5v-3z"/></svg></div>
+        <h3>Private Protection</h3>
+        <p>Discreet personal protection for individuals, families and VIPs, planned around your routine.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
+        <h3>Security Goods Supply</h3>
+        <p>Supply of security equipment and goods for homes, businesses and security teams.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 0 1 10 0v6M5 21h14M12 3v2M4.5 6.5L6 8M19.5 6.5L18 8"/></svg></div>
+        <h3>Armed Response</h3>
+        <p>Rapid armed response when an alarm is triggered or help is needed on site.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 18h18v2H3z"/><path d="M5 18v-2a7 7 0 0 1 14 0v2M12 9V5M9.5 5h5"/></svg></div>
+        <h3>Mining &amp; Construction</h3>
+        <p>Support for mining and construction operations, including site security and services.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M16 8l-2 6-6 2 2-6z"/></svg></div>
+        <h3>Tourism &amp; Hospitality</h3>
+        <p>Tourism and hospitality services that show visitors the best of the region.</p>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="scooters" class="bleed"><div class="wrap scooter">
+    <div>
+      <div class="eyebrow">Scooter training programme</div>
+      <h2>Learn to ride. <span class="gold-text">Then ride to earn.</span></h2>
+      <p>Many young people have the drive to work but no way to get around. Our programme trains them to ride scooters properly and safely, and then puts a scooter in their hands.</p>
+      <p>Training currently takes place in Kwa-Thema, Johannesburg. Get in touch to find out about the next intake.</p>
+      <a class="btn solid" href="#enquire" data-topic="Scooter training">Ask about training</a>
+    </div>
+    <ol class="steps">
+      <li><div><h3>Enrol</h3><p>Tell us about yourself through the enquiry form. We will contact you with the next steps.</p></div></li>
+      <li><div><h3>Train</h3><p>Learn the skills to handle a scooter with control, confidence and care for other road users.</p></div></li>
+      <li><div><h3>Rent</h3><p>Trained riders can rent scooters from us and start moving, working and earning.</p></div></li>
+    </ol>
+  </div></section>
+
+  <section id="contact" class="bleed band"><div class="wrap contact">
+    <div class="info">
+      <div>
+        <div class="eyebrow" style="margin-bottom:18px">Contact us</div>
+        <h2>Let's <span class="gold-text">talk business</span>.</h2>
+      </div>
+      <div class="row">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <div><small>Business email</small><span id="mail">siyabongabhubesigroup@gmail.com</span><br><button type="button" class="copy-btn" id="copyMail">Copy address</button></div>
+      </div>
+      <div class="row">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+        <div><small>Location</small>Kwa-Thema, Johannesburg<br>South Africa</div>
+      </div>
+      <div>
+        <small style="display:block;font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Follow us</small>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+          <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M4 4l11.7 16H20L8.3 4z"/><path d="M4 20l6.8-6.8M13.2 10.8L20 4"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-.8.7c-.9-.4-1.6-1.1-2-2l.7-.8-1-2z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V3a5 5 0 0 0 5 5"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <form id="enquire" novalidate>
+      <h3>Send an enquiry</h3>
+      <p class="note">Tell us what you need and we will get back to you.</p>
+      <div class="f2">
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required><div class="err" id="e-name"></div></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><div class="err" id="e-email"></div></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="topic">I'm enquiring about</label>
+          <select id="topic" name="topic">
+            <option>Scooter training</option>
+            <option>Scooter rental</option>
+            <option>Security services</option>
+            <option>Private protection</option>
+            <option>Security goods supply</option>
+            <option>Armed response</option>
+            <option>Mining &amp; construction</option>
+            <option>Tourism &amp; hospitality</option>
+            <option>Something else</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label for="msg">Your message</label><textarea id="msg" name="msg" required></textarea><div class="err" id="e-msg"></div></div>
+      <button class="btn solid" type="submit">Prepare my enquiry</button>
+      <div id="result" hidden></div>
+    </form>
+  </div></section>
+</main>
+
+<footer class="bleed"><div class="wrap foot">
+  <div><b>Siyabonga Bhubesi Group</b><p>&copy; 2026 Siyabonga Bhubesi Group (Pty) Ltd. Kwa-Thema, Johannesburg, South Africa.</p></div>
+  <p>siyabongabhubesigroup@gmail.com</p>
+</div></footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),btn=document.getElementById('menuBtn');
+  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+
+  var EMAIL='siyabongabhubesigroup@gmail.com';
+  function copy(text,done){
+    function fallback(){var t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove();done()}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,fallback)}else fallback();
+  }
+  var cm=document.getElementById('copyMail');
+  cm.addEventListener('click',function(){copy(EMAIL,function(){cm.textContent='Copied';setTimeout(function(){cm.textContent='Copy address'},1800)})});
+
+  document.querySelectorAll('[data-topic]').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('topic').value=a.getAttribute('data-topic')});
+  });
+
+  var form=document.getElementById('enquire'),res=document.getElementById('result');
+  function setErr(id,m){document.getElementById(id).textContent=m||''}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=form.name.value.trim(),em=form.email.value.trim(),m=form.msg.value.trim(),ok=true;
+    setErr('e-name');setErr('e-email');setErr('e-msg');
+    if(!n){setErr('e-name','Please enter your name.');ok=false}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){setErr('e-email','Please enter a valid email address.');ok=false}
+    if(!m){setErr('e-msg','Please tell us how we can help.');ok=false}
+    if(!ok)return;
+    var subject='Enquiry: '+form.topic.value;
+    var body='Name: '+n+'\nEmail: '+em+'\nPhone: '+(form.phone.value.trim()||'Not given')+'\nTopic: '+form.topic.value+'\n\n'+m;
+    res.hidden=false;
+    res.className='result';
+    res.innerHTML='';
+    var h=document.createElement('h4');h.textContent='Your enquiry is ready to send';
+    var p=document.createElement('p');p.className='note';p.textContent='Open it in your email app, or copy it and send it to '+EMAIL+'. It has not been sent yet.';
+    var pre=document.createElement('pre');pre.textContent='To: '+EMAIL+'\nSubject: '+subject+'\n\n'+body;
+    var row=document.createElement('div');row.className='cta-row';
+    var a=document.createElement('a');a.className='btn solid';a.textContent='Open in email';
+    a.href='mailto:'+EMAIL+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    var c=document.createElement('button');c.type='button';c.className='btn';c.textContent='Copy enquiry';
+    c.addEventListener('click',function(){copy('To: '+EMAIL+'\nSubject: '+subject+'\n\n'+body,function(){c.textContent='Copied';setTimeout(function(){c.textContent='Copy enquiry'},1800)})});
+    row.appendChild(a);row.appendChild(c);
+    res.appendChild(h);res.appendChild(p);res.appendChild(pre);res.appendChild(row);
+    res.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+})();
+</script>
+
+</body></html>
